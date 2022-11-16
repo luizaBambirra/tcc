@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<div id="map_canvas"></div>
+
+<ion-footer>
+  <ion-item color="dark">
+    <ion-label position="floating">Endereço de destino</ion-label>
+    <ion-input [(ngModel)]="destino"></ion-input>
+  </ion-item>
+  <ion-toolbar color="dark">
+    <ion-button
+      [disabled]="destino == '' "
+      *ngIf="this.map"
+      color="dark"
+      expand="block"
+      fill="solid"
+      (click)="chamar()"
+      >Chamar
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

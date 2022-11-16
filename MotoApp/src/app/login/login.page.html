@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" color="warning">
+  <ion-grid>
+    <ion-row class="ion-align-items-center ion-text-center">
+      <ion-col>
+        <ion-item color="dark">
+          <ion-label position="floating">Usuário</ion-label>
+          <ion-input [(ngModel)]="loginUsuario"></ion-input>
+        </ion-item>
+        <br />
+        <ion-item color="dark">
+          <ion-label position="floating">Senha</ion-label>
+          <ion-input
+            (keyUp.enter)="fazerLogin()"
+            [(ngModel)]="senhaUsuario"
+            type="password"
+          ></ion-input>
+        </ion-item>
+        <br />
+        <ion-button
+          color="dark"
+          expand="block"
+          fill="solid"
+          shape="round"
+          (click)="fazerLogin()"
+          [disabled]="!loginUsuario || !senhaUsuario"
+          >Login</ion-button
+        >
+
+        <br />
+        <ion-button
+          color="dark"
+          expand="block"
+          fill="outline"
+          shape="round"
+          (click)="fazerCadastro()"
+          >Fazer cadastro</ion-button
+        >
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

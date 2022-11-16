@@ -1,0 +1,49 @@
+Options +FollowSymlinks
+RewriteEngine on
+
+Header set Access-Control-Allow-Origin "http://localhost:8100/"
+Header set Access-Control-Allow-Origin "*"
+
+#RewriteRule ^conexao$ produto.php?page_key=testeConn [L]
+#
+#RewriteRule ^multarq/([0-9]+)/([0-9]+)$ multarq.php?page_key=listar&usuario=$1&posicao=$2 [L]
+#RewriteRule ^multarq/([0-9]+)$ multarq.php?page_key=listar&posicao=$1 [L]
+#RewriteRule ^multarq$ multarq.php?page_key=listar [L]
+#RewriteRule ^multarq/venda$ multarq.php?page_key=venda [L]
+#
+#RewriteRule ^produto/([0-9]+)$ produto.php?page_key=listar&id=$1 [L]
+#RewriteRule ^produto$ produto.php?page_key=listar [L]
+#
+#RewriteRule ^tabela/([0-9]+)$ tabela.php?page_key=listar&id=$1 [L]
+#RewriteRule ^tabela$ tabela.php?page_key=listar [L]
+#RewriteRule ^tabela/deptoGrupoSubgr$ tabela.php?page_key=listarDeptoGrupoSubgr [L]
+#
+#RewriteRule ^vendedor/([0-9]+)$ vendedor.php?page_key=listar&id=$1 [L]
+#RewriteRule ^vendedor$ vendedor.php?page_key=listar [L]
+#RewriteRule ^vendedor/login$ vendedor.php?page_key=login [L]
+
+#----------------------------------------------------------------------
+
+RewriteRule ^usuario/login$ usuario.php?page_key=login [L]
+
+RewriteRule ^usuario/cadastro$ usuario.php?page_key=cadastro [L]
+
+#RewriteRule ^cidade$ cidade.php?page_key=getAll [L]
+#RewriteRule ^cidade/usadas$ cidade.php?page_key=getUsadas [L]
+
+#RewriteRule ^areaAtuacao$ areaAtuacao.php?page_key=getAll [L]
+#RewriteRule ^areaAtuacao/set$ areaAtuacao.php?page_key=set [L]
+
+#RewriteRule ^especialidade$ especialidade.php?page_key=getAll [L]
+#RewriteRule ^especialidade/set$ especialidade.php?page_key=set [L]
+
+#RewriteRule ^clinica/get$ clinica.php?page_key=get [L]
+#RewriteRule ^clinica/get/([0-9]+)$ clinica.php?page_key=get&idClinica=$1 [L]
+#RewriteRule ^clinica/([0-9]+)/([0-9]+)/([0-9]+)$
+#clinica.php?page_key=getComFiltros&cidade=$1&areaAtuacao=$2&especialidade=$3 [L]
+#RewriteRule ^clinica/set$ clinica.php?page_key=set [L]
+
+RewriteRule ^corrida/get$ corrida.php?page_key=get [L]
+RewriteRule ^corrida/get/([0-9]+)$ corrida.php?page_key=get&id=$1 [L]
+RewriteRule ^corrida/getAll$ corrida.php?page_key=getAll [L]
+RewriteRule ^corrida/set$ corrida.php?page_key=set [L]

@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Cadastro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" color="warning">
+  <ion-grid>
+    <ion-row class="ion-align-items-center ion-text-center">
+      <ion-col>
+        <ion-item color="dark">
+          <ion-label position="floating">Login</ion-label>
+          <ion-input [(ngModel)]="loginUsuario"></ion-input>
+        </ion-item>
+        <br />
+        <ion-item color="dark">
+          <ion-label position="floating">Senha</ion-label>
+          <ion-input [(ngModel)]="senhaUsuario" type="password"></ion-input>
+        </ion-item>
+        <br />
+        <ion-item color="dark">
+          <ion-label position="floating">Confirmar Senha</ion-label>
+          <ion-input
+            [(ngModel)]="confirmaSenhaUsuario"
+            type="password"
+          ></ion-input>
+        </ion-item>
+        <br />
+        <br />
+        <ion-button
+          color="dark"
+          expand="block"
+          fill="outline"
+          shape="round"
+          (click)="fazerCadastro()"
+          [disabled]="!loginUsuario || !senhaUsuario || !confirmaSenhaUsuario"
+          >Cadastrar</ion-button
+        >
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

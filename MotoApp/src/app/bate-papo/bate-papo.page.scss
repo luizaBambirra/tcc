@@ -1,0 +1,33 @@
+ion-grid {
+  height: 100%;
+  background: #626569;
+  ion-row {
+    height: 100%;
+
+    background: #626569;
+    ion-col {
+      background: white;
+      border: 1px solid #626569;
+      border-radius: 10px;
+    }
+  }
+}
+
+ion-list {
+  background: transparent;
+  .mensagem {
+    width: 50%;
+    text-align: left;
+    background: whitesmoke;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px 10px 10px auto;
+    box-shadow: 4px 6px 8px 0px rgb(0 0 0 / 36%);
+    .titulo {
+      font-size: 10px;
+    }
+    .texto {
+      font-size: 17px;
+    }
+  }
+}

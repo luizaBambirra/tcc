@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "498439718256",
+    "project_id": "motoapp-90508",
+    "storage_bucket": "motoapp-90508.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:498439718256:android:c9d94e29c1f55236a37bb5",
+        "android_client_info": {
+          "package_name": "com.luiza.motoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "498439718256-gkv71aqjf4r0c1lgkrfluu87aa07st55.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJ-OvW4Uvt3ohJ5qCbV7nJda1T2rjo100"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "498439718256-gkv71aqjf4r0c1lgkrfluu87aa07st55.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
